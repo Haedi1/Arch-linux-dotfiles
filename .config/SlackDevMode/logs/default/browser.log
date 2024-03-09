@@ -1,0 +1,115 @@
+[03/08/24, 13:29:14:591] info: 
+╔══════════════════════════════════════════════════════╗
+║      Slack 4.36.140, linux 6.7.8-arch1-1 on x64      ║
+╚══════════════════════════════════════════════════════╝ 
+[03/08/24, 13:29:14:592] info: Configured logger via 
+{
+  "loggerInstanceCount": 1
+}
+[03/08/24, 13:29:14:598] info: Predefined values for process 
+{
+  "NODE_ENV": "production",
+  "platform": "linux",
+  "type": "browser",
+  "timeZone": "Europe/Oslo",
+  "PACKAGE_MANIFEST.productName": "Slack",
+  "PACKAGE_MANIFEST.version": "4.36.140",
+  "PACKAGE_MANIFEST.commit": "ae9c897",
+  "PACKAGE_MANIFEST.branch": "HEAD"
+}
+[03/08/24, 13:29:14:665] info: Starting Sentry 
+[03/08/24, 13:29:14:666] debug: makeUuidFactory:: There is no memoized UUID for instance, try to read from filesystem 
+{
+  "uuidLocation": "/home/[REDACTED]/.config/SlackDevMode/installation"
+}
+[03/08/24, 13:29:14:666] debug: Could not locate uuid from userdata, generating new file 
+[03/08/24, 13:29:14:666] info: persistUuid:: Generated uuid 
+{
+  "uuid": "5b81bcbd-09fe-4e6e-ac97-e9c64f01903b"
+}
+[03/08/24, 13:29:14:667] info: persistUuid:: Uuid persisted successfully 
+[03/08/24, 13:29:14:667] info: getSentryDSN: Setting sentry URL to slack.com 
+[03/08/24, 13:29:14:676] info: Could not load previous electron version 
+[03/08/24, 13:29:14:755] info: Breadcrumb: electron: app.will-finish-launching 
+[03/08/24, 13:29:14:760] info: Breadcrumb: electron: app.ready 
+[03/08/24, 13:29:14:767] info: Breadcrumb: electron: app.session-created 
+[03/08/24, 13:29:14:779] info: Store: persist/PERSIST 
+[03/08/24, 13:29:14:781] debug: applyLocale: Current locale is same as new locale specified, skipping 
+{
+  "locale": "en-US",
+  "current": "en-US"
+}
+[03/08/24, 13:29:14:781] info: Store: UPDATE_SETTINGS 
+{
+  "locale": "en-US"
+}
+[03/08/24, 13:29:14:783] info: Migrating from redux-persist@v4 
+[03/08/24, 13:29:14:784] info: Finished migrating state 
+{
+  "keys": [
+    "_persist"
+  ],
+  "version": 1
+}
+[03/08/24, 13:29:14:784] info: Store: persist/REHYDRATE 
+{
+  "_persist": "Persistence version: 1"
+}
+[03/08/24, 13:29:14:785] info: Store: RECORD_PERFORMANCE_TIMING 
+{
+  "phase": 0,
+  "interval": 7
+}
+[03/08/24, 13:29:14:785] info: Store: INITIALIZE 
+{
+  "resourcePath": "/usr/lib/slack/resources/app.asar",
+  "tsaToken": "[REDACTED]",
+  "bootFragments": [],
+  "isDevMode": true
+}
+[03/08/24, 13:29:14:793] info: Store: SET_SESSION_MODE 
+[03/08/24, 13:29:14:793] info: Feature Check: requesting features from https://app.slack.com/api/ 
+[03/08/24, 13:29:14:794] debug: getSessionFromState: requested session for id, but fall back to default 
+{
+  "sessionId": "PROD_DEFAULT_SESSION"
+}
+[03/08/24, 13:29:14:795] debug: getSessionFromState: requested session for id, but fall back to default 
+{
+  "sessionId": "PROD_DEFAULT_SESSION"
+}
+[03/08/24, 13:29:14:796] info: Breadcrumb: electron: powerMonitor.newListener 
+[03/08/24, 13:29:14:796] info: Breadcrumb: electron: powerMonitor.newListener 
+[03/08/24, 13:29:14:799] error: Failed to load calls-desktop-interop.WindowBorderPanel 
+{
+  "error": {
+    "stack": "Error: Module did not self-register: '/usr/lib/slack/resources/app.asar.unpacked/node_modules/@tinyspeck/huddles-desktop-utils/build/Release/CallsDesktopInterop.node'.\n    at process.func [as dlopen] (node:electron/js2c/asar_bundle:2:2238)\n    at Module._extensions..node (node:internal/modules/cjs/loader:1356:18)\n    at Object.func [as .node] (node:electron/js2c/asar_bundle:2:2465)\n    at Module.load (node:internal/modules/cjs/loader:1126:32)\n    at Module._load (node:internal/modules/cjs/loader:967:12)\n    at l._load (node:electron/js2c/asar_bundle:2:13642)\n    at Module.require (node:internal/modules/cjs/loader:1150:19)\n    at require (node:internal/modules/cjs/helpers:119:18)\n    at bindings (/usr/lib/slack/resources/app.asar/node_modules/bindings/bindings.js:112:48)\n    at Object.<anonymous> (/usr/lib/slack/resources/app.asar/node_modules/@tinyspeck/huddles-desktop-utils/lib/index.js:1:34)",
+    "message": "Module did not self-register: '/usr/lib/slack/resources/app.asar.unpacked/node_modules/@tinyspeck/huddles-desktop-utils/build/Release/CallsDesktopInterop.node'.",
+    "code": "ERR_DLOPEN_FAILED"
+  },
+  "stackFrameString": "[{\"columnNumber\":2238,\"lineNumber\":2,\"fileName\":\"node:electron/js2c/asar_bundle\",\"functionName\":\"process.func [as dlopen]\",\"source\":\"    at process.func [as dlopen] (node:electron/js2c/asar_bundle:2:2238)\"},{\"columnNumber\":18,\"lineNumber\":1356,\"fileName\":\"node:internal/modules/cjs/loader\",\"functionName\":\"Module._extensions..node\",\"source\":\"    at Module._extensions..node (node:internal/modules/cjs/loader:1356:18)\"},{\"columnNumber\":2465,\"lineNumber\":2,\"fileName\":\"node:electron/js2c/asar_bundle\",\"functionName\":\"Object.func [as .node]\",\"source\":\"    at Object.func [as .node] (node:electron/js2c/asar_bundle:2:2465)\"},{\"columnNumber\":32,\"lineNumber\":1126,\"fileName\":\"node:internal/modules/cjs/loader\",\"functionName\":\"Module.load\",\"source\":\"    at Module.load (node:internal/modules/cjs/loader:1126:32)\"},{\"columnNumber\":12,\"lineNumber\":967,\"fileName\":\"node:internal/modules/cjs/loader\",\"functionName\":\"Module._load\",\"source\":\"    at Module._load (node:internal/modules/cjs/loader:967:12)\"},{\"columnNumber\":13642,\"lineNumber\":2,\"fileName\":\"node:electron/js2c/asar_bundle\",\"functionName\":\"l._load\",\"source\":\"    at l._load (node:electron/js2c/asar_bundle:2:13642)\"},{\"columnNumber\":19,\"lineNumber\":1150,\"fileName\":\"node:internal/modules/cjs/loader\",\"functionName\":\"Module.require\",\"source\":\"    at Module.require (node:internal/modules/cjs/loader:1150:19)\"},{\"columnNumber\":18,\"lineNumber\":119,\"fileName\":\"node:internal/modules/cjs/helpers\",\"functionName\":\"require\",\"source\":\"    at require (node:internal/modules/cjs/helpers:119:18)\"},{\"columnNumber\":48,\"lineNumber\":112,\"fileName\":\"/usr/lib/slack/resources/app.asar/node_modules/bindings/bindings.js\",\"functionName\":\"bindings\",\"source\":\"    at bindings (/usr/lib/slack/resources/app.asar/node_modules/bindings/bindings.js:112:48)\"},{\"columnNumber\":34,\"lineNumber\":1,\"fileName\":\"/usr/lib/slack/resources/app.asar/node_modules/@tinyspeck/huddles-desktop-utils/lib/index.js\",\"functionName\":\"Object.<anonymous>\",\"source\":\"    at Object.<anonymous> (/usr/lib/slack/resources/app.asar/node_modules/@tinyspeck/huddles-desktop-utils/lib/index.js:1:34)\"}]"
+}
+[03/08/24, 13:29:14:799] debug: getSessionFromState: requested session for id, but fall back to default 
+{
+  "sessionId": "PROD_DEFAULT_SESSION"
+}
+[03/08/24, 13:29:14:804] warn: Couldn't get Linux distro info from lsb_release, trying fallback to get Linux distro info 
+{
+  "error": {
+    "stack": "Error: Command failed: lsb_release -a --short\n/bin/sh: line 1: lsb_release: command not found\n\n    at ChildProcess.exithandler (node:child_process:430:12)\n    at ChildProcess.emit (node:events:517:28)\n    at ChildProcess.emit (node:domain:489:12)\n    at maybeClose (node:internal/child_process:1098:16)\n    at Socket.<anonymous> (node:internal/child_process:450:11)\n    at Socket.emit (node:events:517:28)\n    at Socket.emit (node:domain:489:12)\n    at Pipe.<anonymous> (node:net:350:12)",
+    "message": "Command failed: lsb_release -a --short\n/bin/sh: line 1: lsb_release: command not found\n",
+    "code": 127,
+    "killed": false,
+    "signal": null,
+    "cmd": "lsb_release -a --short",
+    "stdout": "",
+    "stderr": "/bin/sh: line 1: lsb_release: command not found\n"
+  },
+  "stackFrameString": "[{\"columnNumber\":12,\"lineNumber\":430,\"fileName\":\"node:child_process\",\"functionName\":\"ChildProcess.exithandler\",\"source\":\"    at ChildProcess.exithandler (node:child_process:430:12)\"},{\"columnNumber\":28,\"lineNumber\":517,\"fileName\":\"node:events\",\"functionName\":\"ChildProcess.emit\",\"source\":\"    at ChildProcess.emit (node:events:517:28)\"},{\"columnNumber\":12,\"lineNumber\":489,\"fileName\":\"node:domain\",\"functionName\":\"ChildProcess.emit\",\"source\":\"    at ChildProcess.emit (node:domain:489:12)\"},{\"columnNumber\":16,\"lineNumber\":1098,\"fileName\":\"node:internal/child_process\",\"functionName\":\"maybeClose\",\"source\":\"    at maybeClose (node:internal/child_process:1098:16)\"},{\"columnNumber\":11,\"lineNumber\":450,\"fileName\":\"node:internal/child_process\",\"functionName\":\"Socket.<anonymous>\",\"source\":\"    at Socket.<anonymous> (node:internal/child_process:450:11)\"},{\"columnNumber\":28,\"lineNumber\":517,\"fileName\":\"node:events\",\"functionName\":\"Socket.emit\",\"source\":\"    at Socket.emit (node:events:517:28)\"},{\"columnNumber\":12,\"lineNumber\":489,\"fileName\":\"node:domain\",\"functionName\":\"Socket.emit\",\"source\":\"    at Socket.emit (node:domain:489:12)\"},{\"columnNumber\":12,\"lineNumber\":350,\"fileName\":\"node:net\",\"functionName\":\"Pipe.<anonymous>\",\"source\":\"    at Pipe.<anonymous> (node:net:350:12)\"}]"
+}
+[03/08/24, 13:29:14:820] info: getLinuxDistro: getos 
+{
+  "res": {
+    "os": "linux",
+    "dist": "Arch Linux"
+  }
+}
